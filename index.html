@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator | Amit Patil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="age-card">
+      <h1>Age Calculator</h1>
+      <label for="date-of-birth">Date of birth</label>
+      <input
+        type="date"
+        id="date-of-birth"
+        placeholder="Enter your date of birth"
+      />
+      <button onclick="calculateAge()">Get Age</button>
+      <div id="result" class="age-result" style="display: none"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

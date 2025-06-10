@@ -1,0 +1,91 @@
+:root {
+    --primary: #00BCD4;
+    --secondary: #673AB7;
+    --background: #E0F7FA;
+    --button: #00E5FF;
+    --font: 'Orbitron', 'Montserrat', sans-serif;
+    --shadow: 0 12px 40px 0 rgba(0, 188, 212, 0.25);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background);
+    font-family: var(--font);
+    transition: background 0.5s;
+}
+
+.age-card {
+    background: var(--background);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    padding: 2.5rem 2rem;
+    min-width: 340px;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.age-card:hover {
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.22);
+}
+
+.age-card h1 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.age-card label {
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: 0.3rem;  
+    display: block;
+}
+
+.age-card button {
+    background: var(--button);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px 0 #e1ad0133;
+
+}
+
+.age-result {
+    background: var(--primary);
+    color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    box-shadow: 0 2px 8px 0 #a0c4b833;
+    letter-spacing: 0.5px;
+}
+
+.age-card input[type="date"] {
+    box-sizing: border-box; 
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1.5px solid var(--input-border);
+    border-radius: 8px;
+    background: var(--input-bg);
+    font-size: 1rem;
+    color: var(--primary);
+    outline: auto;
+    transition: border var(--transition), box-shadow var(--transition);
+    margin-bottom: 0.5rem;
+}
